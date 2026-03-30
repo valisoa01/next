@@ -1,5 +1,4 @@
-// app/layout.jsx
-import { Geist, Geist_Mono } from "next/font/google";
+ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import RecipeList from "./RecipeList/page";
 
@@ -19,13 +18,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const recipes = [ /* your JSON array here */ ];
+  const recipes = [ ];
 
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <RecipeList recipes={recipes} />
-        {children} {/* Keep this if you want other pages */}
+        {children}  
       </body>
     </html>
   );

@@ -10,7 +10,7 @@ export default function RecipeCard({ recipe, onSelect }) {
   };
 
   const handlePinClick = (e) => {
-    e.stopPropagation(); // Prevent opening the modal when clicking pin
+    e.stopPropagation();  
     setPinned((prev) => !prev);
   };
 

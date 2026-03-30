@@ -1,6 +1,4 @@
-// app/RecipeList/page.jsx
 'use client';
-
 import { useState, useEffect } from 'react';
 import RecipeCard from '../components/RecipeCard';
 import styles from '../styles/RecipeList.module.css';
@@ -39,7 +37,6 @@ export default function RecipeList() {
     loadRecipes();
   }, []);
 
-  // Filtre de recherche
   useEffect(() => {
     if (recipes.length === 0) return;
     const filtered = recipes.filter((recipe) =>
@@ -95,8 +92,7 @@ export default function RecipeList() {
           ))}
         </ul>
 
-        {/* Modal Détails */}
-        {selectedRecipe && (
+         {selectedRecipe && (
           <div className={styles.overlay}>
             <div className={styles.details}>
               <button onClick={() => setSelectedRecipe(null)}>✕ Fermer</button>
