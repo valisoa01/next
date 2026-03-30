@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import style from '../styles/RecipeCard.module.css';
 
